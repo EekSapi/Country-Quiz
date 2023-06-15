@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=5"/>
+        <link rel="icon" href="icon/undraw_winners_ao2o 2.svg" />
+        <link rel="stylesheet" href="style/question.css" />
+        <link rel="stylesheet" href="style/question-m.css" />
+        <title>Country Quiz</title>
+    </head>
+
+    <body>
+        <div class="box">
+            <div id="ans" style="display: none;"></div>
+            <img src="icon/undraw_adventure_4hum 1.svg" alt="" id="image-icon" class="image-icon">
+            <div class="title">COUNTRY QUIZ</div>
+
+            <div id="question-box" class="question-box">
+                <div id="create">
+                    <img style="display: none;" id="flag" class="flag" src="">
+                    <div style="display: none;" id="quest" class="quest">WHICH COUNTRY DOES THIS FLAG BELONG TO?</div>
+                    <div style="display: none;" id="question" class="question"></div>
+                    <button class="option-box" id="option-box1" onclick="answer(1)" onmouseover="hover(1)" onmouseout="out(1)">
+                        <div id="option1" class="option">A<span class="content" id="content1"></span>
+                        <span class="indicator" style="display: none"><img src="icon/right.svg" alt=""></span>
+                        <span class="indicatorx" style="display: none"><img src="icon/wrong.svg" alt=""></span>
+                        </div>
+                    </button>
+                    <button class="option-box" id="option-box2" onclick="answer(2)" onmouseover="hover(2)" onmouseout="out(2)">
+                        <div id="option2" class="option">B<span class="content" id="content2"></span>
+                        <span class="indicator" style="display: none"><img src="icon/right.svg" alt=""></span>
+                        <span class="indicatorx" style="display: none"><img src="icon/wrong.svg" alt=""></span>
+                        </div>
+                    </button>
+                    <button class="option-box" id="option-box3" onclick="answer(3)" onmouseover="hover(3)" onmouseout="out(3)">
+                        <div id="option3" class="option">C<span class="content" id="content3"></span>
+                        <span class="indicator" style="display: none"><img src="icon/right.svg" alt=""></span>
+                        <span class="indicatorx" style="display: none"><img src="icon/wrong.svg" alt=""></span>
+                        </div>
+                    </button>
+                    <button class="option-box" id="option-box4" onclick="answer(4)" onmouseover="hover(4)" onmouseout="out(4)">
+                        <div id="option4" class="option">D<span class="content" id="content4"></span>
+                        <span class="indicator" style="display: none"><img src="icon/right.svg" alt=""></span>
+                        <span class="indicatorx" style="display: none"><img src="icon/wrong.svg" alt=""></span>
+                        </div>
+                    </button>
+                    <button onclick="next()" style="display: none;" class="next" id="next">
+                        Next
+                    </button>
+                </div>
+
+                <div style="display: none;" id="complete" class="complete">
+                    <img src="icon/undraw_winners_ao2o 2.svg" alt="" class="complete-icon">
+                    <div class="result-title">Results</div>
+                    <div class="result">You got <b><span id="result"></span></b> correct answers</div>
+                    <a href="index.html"><button class="try">Try Again</button></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="watermark">
+            created by 
+            <a href="https://github.com/EekSapi" class="ref">EekSapi</a> 
+            - <a href="https://devchallenges.io/" class="ref">devChallenges.io</a>
+          </div>
+        <div style="display: none;" id="total">0</div>
+        <div style="display: none;" id="correct">0</div>
+
+
+    </body>
+
+    <script src="script.js"></script>
+
+</html>
