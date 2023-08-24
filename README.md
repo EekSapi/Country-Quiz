@@ -65,4 +65,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@EekSapi](https://github.com/Eeksapi)
+- GitHub [@FarelW](https://github.com/FarelW)
