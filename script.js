@@ -150,16 +150,21 @@ function randomize(min,max){
     return Math.floor(Math.random()*(max+1))+min
 }
 
+let hoverEnabled = true;
 function hover(id){
-    document.getElementById("option-box"+id).style.backgroundColor= "#F9A826"
-    document.getElementById("option"+id).style.color= "#FFFFFF"
-    document.getElementById("option-box"+id).style.borderColor= "#F9A826"
+    if (hoverEnabled) {
+        document.getElementById("option-box" + id).style.backgroundColor = "#F9A826"
+        document.getElementById("option" + id).style.color = "#FFFFFF"
+        document.getElementById("option-box" + id).style.borderColor = "#F9A826"
+    }
 }
 
 function out(id){
+    if (hoverEnabled) {
     document.getElementById("option-box"+id).style.backgroundColor= "#FFFFFF"
     document.getElementById("option"+id).style.color= "rgba(96, 102, 208, 0.8)"
     document.getElementById("option-box"+id).style.borderColor= "rgba(96, 102, 208, 0.8)"
+    }
 }
 
 
@@ -207,7 +212,7 @@ function answer(id){
 
         document.getElementById("next").style.display="inline"
     }
-
+    hoverEnabled = false
 }
 
 function total(){
@@ -235,6 +240,7 @@ function correct(){
 function next(){
     generate()
     total()
+    hoverEnabled = true
 }
 
 next()

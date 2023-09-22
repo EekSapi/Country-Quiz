@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Country Quiz Farel</h1>
+<h1 align="center">Country Quiz EekSapi</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -65,4 +65,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@FarelW](https://github.com/FarelW)
+- GitHub [@EekSapi](https://github.com/Eeksapi)
